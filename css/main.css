@@ -12,7 +12,7 @@ header h1.logo img{width: 100%; }
 #hamburger-1.is-active .line:nth-child(1) { -webkit-transform: translateY(13px) rotate(45deg); -ms-transform: translateY(10px) rotate(45deg); -o-transform: translateY(10px) rotate(45deg); transform: translateY(10px) rotate(45deg); }
 #hamburger-1.is-active .line:nth-child(3) { -webkit-transform: translateY(-10px) rotate(-45deg); -ms-transform: translateY(-10px) rotate(-45deg); -o-transform: translateY(-10px) rotate(-45deg); transform: translateY(-10px) rotate(-45deg); }
 
-nav{ width: 180px;position: fixed;box-shadow: 16px 0 42px rgba(0, 0, 0, 0.192);background-color:#f5f5f5;z-index: 10; height: 100vh;top:0;padding: 15px;transform:translateX(-180px);transition: transform .5s linear;}
+nav{ width: 180px;position: fixed;box-shadow: 16px 0 42px rgba(0, 0, 0, 0.192);background-color:#202F49;z-index: 10; height: 100vh;top:0;padding: 15px;transform:translateX(-180px);transition: transform .5s linear;}
 .is-nav{transform:translateX(80px);}
 nav #nav{list-style: none;margin: 0;padding: 0;height: calc(100vh - 180px);display: flex;justify-content: center;flex-direction: column!important;}
 nav #nav li{text-align: center;margin: 15px 0;}
