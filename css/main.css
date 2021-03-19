@@ -1,5 +1,7 @@
 body{margin: 0;padding: 0;box-sizing: border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" ;}
 
+html{font-size: 16px;}
+
 /* header 區*/
 header { width:80px;height: 100vh; background-color: #fff;position: relative;box-shadow: 6px 0 12px rgba(0,0,0,.05);display: inline-block;z-index: 99;padding: 0;margin: 0; }
 header h1.logo{width: 100%;padding: 15px;}
@@ -9,11 +11,11 @@ header h1.logo img{width: 100%; }
 .hamburger .line { width: 35px; height: 2px; background-color: #202F49; display: block; margin: 8px auto; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 .hamburger:hover { cursor: pointer; }
 #hamburger-1.is-active .line:nth-child(2) { opacity: 0; }
-#hamburger-1.is-active .line:nth-child(1) { -webkit-transform: translateY(13px) rotate(45deg); -ms-transform: translateY(10px) rotate(45deg); -o-transform: translateY(10px) rotate(45deg); transform: translateY(10px) rotate(45deg); }
-#hamburger-1.is-active .line:nth-child(3) { -webkit-transform: translateY(-10px) rotate(-45deg); -ms-transform: translateY(-10px) rotate(-45deg); -o-transform: translateY(-10px) rotate(-45deg); transform: translateY(-10px) rotate(-45deg); }
+#hamburger-1.is-active .line:nth-child(1) { -webkit-transform: translateY(13px) rotate(45deg); -ms-transform: translateY(10px) rotate(45deg); -o-transform: translate(10px,0) rotate(45deg); transform: translateY(10px) rotate(45deg); }
+#hamburger-1.is-active .line:nth-child(3) { -webkit-transform: translateY(-10px) rotate(-45deg); -ms-transform: translateY(-10px) rotate(-45deg); -o-transform: translate(-10px,0) rotate(-45deg); transform: translateY(-10px) rotate(-45deg); }
 
 nav{ width: 180px;position: fixed;box-shadow: 16px 0 42px rgba(0, 0, 0, 0.192);background-color:#202F49;z-index: 10; height: 100vh;top:0;padding: 15px;transform:translateX(-180px);transition: transform .5s linear;}
-.is-nav{transform:translateX(80px);}
+.is-nav{transform:translate(80px,0);}
 nav #nav{list-style: none;margin: 0;padding: 0;height: calc(100vh - 180px);display: flex;justify-content: center;flex-direction: column!important;}
 nav #nav li{text-align: center;margin: 15px 0;}
 nav #nav li a {font-size: 30px;text-decoration: none;color: #cacaca;font-weight:600;transition: all .3s linear;}
@@ -26,3 +28,20 @@ main{width: calc(100% - 80px);float:right;}
 
 /* main 區*/
 .photo{border:1px solid #18c9c9;}
+
+
+@media (max-width: 991px){
+    /* nav */
+    header { width: 100%; height: auto; }
+    header h1.logo { width: 80px; padding: 15px; }
+    .hamburger { position: absolute; top: 22px; right: 15px; width: 30px; }
+    .hamburger .line { width: 30px; }
+    nav { width: 100%; height: auto; transform: translate(0,-280px);}
+    nav #nav { height: auto; }
+    .is-nav{transform:translate(0,80px);}
+
+    /* 主內容空間 */
+    main { width: 100%; float: none; }
+
+  
+}
