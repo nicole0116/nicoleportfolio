@@ -31,10 +31,17 @@ main{width: calc(100% - 80px);float:right;}
 
 
 @media (max-width: 991px){
+    /* nav */
     header { width: 100%; height: auto; }
     header h1.logo { width: 80px; padding: 15px; }
     .hamburger { position: absolute; top: 22px; right: 15px; width: 30px; }
+    .hamburger .line { width: 30px; }
     nav { width: 100%; height: auto; transform: translate(0,-280px);}
     nav #nav { height: auto; }
     .is-nav{transform:translate(0,80px);}
+
+    /* 主內容空間 */
+    main { width: 100%; float: none; }
+
+  
 }
